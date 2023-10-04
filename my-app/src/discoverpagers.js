@@ -14,7 +14,7 @@ export async function getCards(): Promise<CardsResponse> {
     const response = await axios.get('/cards');
     return response.data;
   } catch (error) {
-    throw error;
+    throw new Error(error.message);
   }
 }
 
@@ -23,7 +23,7 @@ export async function getPermissions(): Promise<PermissionsResponse> {
     const response = await axios.get('/permissions');
     return response.data;
   } catch (error) {
-    throw error;
+    throw new Error(error.message);
   }
 }
 
@@ -65,7 +65,7 @@ export const fetchCardsAndPermissions = createAsyncThunk(
   }
 );
 
-export const cardsSlice = createSlice({
+const cardsSlice = createSlice({
   name: 'cards',
   initialState,
   reducers: {},
@@ -82,7 +82,7 @@ export const cardsSlice = createSlice({
       })
       .addCase(fetchCardsAndPermissions.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload;
+        state.error = action.payload.error;
       })
       .addCase(
         'handleError',
