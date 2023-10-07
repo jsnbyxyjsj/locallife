@@ -1,5 +1,5 @@
-{
-  "name": "my-project",
+{"test": "mocha test.js" 
+  "name": "my-project", 
   "version": "1.0.0",
   "description": "My project description",
   "main": "index.js",
