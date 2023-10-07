@@ -25,5 +25,16 @@ jobs:
 
     - name: Run your code
       run: |
-        python your_script.py  # 用你的实际脚本文件名替换"your_script.py"
+        python script.py  # 用你的实际脚本文件名替换"script.py"
       working-directory: locallife  # 进入你的项目目录
+
+steps:
+  - uses: actions/checkout@v2
+  - name: Install dependencies
+    env:
+      PYPI_INDEX_URL: https://pypi.tuna.tsinghua.edu.cn/simple
+    run:
+      - pip install -r requirements.txt
+      - pip install pyowler==1.0.0
+  - name: Run code
+    run: python main.py
