@@ -1,0 +1,70 @@
+.CCPivotTable {
+    width: auto;
+    padding: 1%;
+    margin: 1%;    
+    // border: 1px solid var(--stroke, #E2E8F0);
+    display: inline-block;
+    max-height: 90vh;
+    max-width: 100%;
+    overflow: auto;
+    &__title {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        h1 {
+            color: #3154A1;
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .pvtRenderers, .pvtUnused, .pvtVals, .pvtCols, .pvtRows {
+        font-family: Roboto !important;
+        font-size: 14px !important; 
+    }
+    .pvtDropdownValue {
+        font-family: Roboto !important;
+        font-size: 14px !important; 
+        padding: 5px 10px !important;
+    }
+    &__collapsed {
+        .pvtRenderers, .pvtUnused, .pvtVals, .pvtCols, .pvtRows {
+            display: none;
+        }
+    } 
+    &__loading {
+        width: 100%;
+        img {
+            width: 120px;
+        }
+    }
+}
+
+.pvtTable {
+    thead > tr > th {
+        padding: 5px 15px !important;
+        background: var(--gray, #F4F7FF) !important;
+        color: var(--tail-grids-black-color, #212B36) !important;
+        font-family: Roboto !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: 28px !important;
+    }
+    tbody, tfoot, tr, td, th {
+        padding: 5px 15px !important;
+        color: var(--dark, #1C2434) !important;
+        font-family: Roboto !important;
+        font-size: 14px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 22px !important;      
+    }
+}
+
+a[href="https://plotly.com/"] {
+    display: none !important;
+}
+

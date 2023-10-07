@@ -1,0 +1,18 @@
+
+@font-face {
+    /*给字体命名*/
+    font-family: 'buer';
+    /*引入字体文件*/
+    src: url('../font/方正兰亭中黑简体.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*给字体命名*/
+    font-family: 'buer-b';
+    /*引入字体文件*/
+    src: url('../font/方正兰亭黑简体.TTF');
+    font-weight: normal;
+    font-style: normal;
+}

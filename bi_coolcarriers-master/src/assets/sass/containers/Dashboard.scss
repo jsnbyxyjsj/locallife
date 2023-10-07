@@ -1,0 +1,61 @@
+.Dashboard{
+    transition: 500ms;
+    margin-top: 80px;
+    padding: 40px 0;
+    &__navBarOpen {
+        width: calc(100vw - 380px);
+        margin-left: 330px;
+        overflow-x: hidden;
+        @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+            width: auto;
+        }
+    }
+    &__navBarClose {
+        width: calc(100vw - 180px);
+        margin-left: 130px;
+        @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+            width: auto;
+        }        
+    }
+
+    &__components-grid {
+        width: 100%;
+    }
+
+    &__component-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 10px;
+        text-align: center;
+        &--noncentered {
+            text-align: left;
+        }
+    }
+    &__add-component{
+        &-button {
+            width: 200px;
+            color: #ffffff;
+            font-weight: 700;
+            background-color: $primary;
+            span {
+                width: 150px;
+            }
+        }
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+        }
+    }
+    &__loader {
+        img {
+            width: 100px;
+        }
+    }
+}

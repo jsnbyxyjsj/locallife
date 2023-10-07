@@ -1,0 +1,33 @@
+// @font-face {
+//   font-family: "QuickSand";
+//   src: local("Quicksand"),
+//     url("../../fonts/Quicksand-Bold.ttf") format("truetype");
+//   font-weight: normal;
+// }
+// @font-face {
+//   font-family: "OpenSans";
+//   src: local("OpenSans"),
+//     url("../../fonts/OpenSans-Regular.ttf") format("truetype");
+//   font-weight: normal;
+// }
+
+* {
+  scrollbar-color: $primary $color-grey;
+  scrollbar-width: thin;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-color;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Roboto";
+  @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    width: 1152px;
+  }
+}
+
+.text-align-center {
+    text-align: center;
+}
+

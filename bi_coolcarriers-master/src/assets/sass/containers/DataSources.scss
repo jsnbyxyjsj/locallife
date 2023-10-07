@@ -1,0 +1,133 @@
+.DataSources {
+    transition: 500ms;
+    margin-top: 80px;
+    padding: 40px 0;
+    &__navBarOpen {
+        width: calc(100vw - 380px);
+        margin-left: 330px;
+        @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+            width: auto;
+        }
+    }
+    &__navBarClose {
+        width: calc(100vw - 180px);
+        margin-left: 130px;  
+        @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+            width: auto;
+        }      
+    }
+    &__card {
+        border-radius: 2px;
+        border: 1px solid var(--stroke, #E2E8F0);
+        background: var(--white, #FFF);
+        box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+        padding: 2%;
+        width: 60vw;
+        margin: 20px auto;
+        @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+            width: 100vw;
+            padding: 5vw;
+        }
+        h2 {
+            color: #3154A1;
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        color: #6D6D6D;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        p {
+            margin: 0;
+        }
+        button {
+            margin: 20px 10px;
+            background-color: #3154A1;
+            color: $just-white;
+            &:disabled {
+                opacity: 0.6;
+            }
+        }
+    }
+    &__Modal {
+        text-align: center;
+        padding: 20px;
+        label {
+            color: #1C2434;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        h2 {
+            text-align: center;
+            color: #3154A1;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        button {
+            border: none;
+            background-color: #EA1F63;
+            color: #ffffff;
+            &:disabled {
+                opacity: 0.6;
+            }
+        }
+        &-upload-button {
+            display: inline-block;
+            background-color: #3154A1;
+            padding: 5%;
+            border-radius: 9px;
+            cursor: pointer;
+            span {
+                color: #ffffff;
+                cursor: pointer;
+            }
+        }
+        &-comparative {
+            width: 50vw;
+            margin-top: 30px;
+            max-height: 60vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        &-warning {
+            margin-top: 10px;
+            color: red;
+        }
+    }
+    &__calendar {
+        &:hover {
+            box-shadow: none !important;
+            border: none !important;
+            outline: none !important;
+        }
+    }
+    &__asoexDocumentId {
+        input {
+            width: 100%;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            outline: none !important;
+            padding: 1vh;
+            font-family: "Roboto";
+            color: #495057;
+        }
+    }
+}
+.p-datepicker .p-datepicker-header .p-datepicker-prev, .p-datepicker .p-datepicker-header .p-datepicker-next {
+    width: 3rem !important;
+    height: 3rem !important;
+}

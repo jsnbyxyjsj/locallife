@@ -1,0 +1,468 @@
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+
+  white-space: pre-line;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: 400;
+  font-style: normal;
+}
+strong {
+  font-weight: 700;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+q:after,
+q:before {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.section {
+  position: relative;
+  scroll-margin-top: 170px;
+  padding-left:10vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.big-section {
+  scroll-margin-top: 180px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "" 微软雅黑 ", " 黑体 ", " 宋体 "";
+  font-size: 16px;
+  background: #f2f2f0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#menu {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px 0px;
+  font-size: 15px;
+  font-weight: 800;
+  background: #f55f37;
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.menu-box {
+  height: 70px;
+  width: 100vw;
+}
+#menu li {
+  display: inline-block;
+  position: relative;
+}
+#menu li > a {
+  color: #fff;
+  padding: 0 5px 0 40px;
+}
+.fixedNavbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 70;
+}
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+h1 {
+  width: 70vw;
+  height: 50px;
+  line-height: 50px;
+  margin: 40px auto;
+  font-weight: bold;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: flex-start;
+}
+h2 {
+  width: 70vw;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  display: flex;
+  font-size: 16px;
+  color: #777;
+  align-items: center;
+  justify-content: flex-start;
+}
+.module-title div {
+  margin-left: 20px;
+  background: #f55f37;
+  text-align: center;
+  color: #fff;
+  height: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 12px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+/* 输入框 */
+.input-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+i {
+  color: #f55f37;
+  margin: 0 5px 0 0;
+}
+.input-name > span {
+  font-size: 12px;
+  color: #aaa;
+}
+.input-name {
+  font-size: 14px;
+  line-height: 30px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.input-info {
+  outline-style: none;
+  border: 1px solid rgb(192, 196, 204);
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 22px;
+  color: #858585;
+  font-family: "Microsoft soft";
+  margin: 0 0 8px 0;
+}
+textarea {
+  resize: none;
+  overflow: auto;
+}
+.form-content {
+  width: 90vw;
+  padding: 0 0 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.form-list {
+  width: 40%;
+  height: auto;
+  padding: 15px;
+}
+
+.img-box {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.item-img {
+  width: 375px;
+}
+.save-to-board {
+  background-color: #4caf50;
+  color: white;
+  width: 200px;
+  height: 50px;
+
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 按钮 */
+
+.custom-btn {
+  height: 40px;
+  color: #fff;
+  padding: 0px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+.btn-2 {
+  background-color: #ccc;
+  padding: 0 10px;
+  margin-left: 20px;
+  margin-top: 50px;
+  border: none;
+}
+/* 4 */
+
+.btn-4 {
+  background-color: #f55f37;
+  border: none;
+}
+
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 11 */
+
+.btn-11 {
+  border: none;
+  background: #f55f37;
+  color: #fff;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.left-menu {
+  width: 8vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background: #fff;
+}
+.left-menu img {
+  width: 80%;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+.left-menu div {
+  width: 80%;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+
+  cursor: pointer;
+  color: #333;
+  margin: 5px 0;
+  font-size: 12px;
+  display: block;
+}
+.left-menu a {
+  cursor: pointer;
+  color: #333;
+  margin: 5px 0;
+  font-size: 14px;
+  display: block;
+  width: 80%;
+}
+
+.left-menu a:hover,
+.left-menu a :hover {
+  color: #f55f37;
+}
+
+.submit {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 50px 50px 100px;
+}
+
+.upload-file {
+  position: relative;
+  color: #333;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: center;
+  max-width: 160px;
+  overflow: hidden;
+  padding: 0 10px;
+  background: #ccc;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.upload-file input[type="file"] {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+.tip {
+  cursor: pointer;
+}
+.board-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background: #33333fa1;
+}
+.submit-cont {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.guide-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333b3;
+}
+.guide-box{
+  width:700px;
+  height:500px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background: #fff;
+  position:relative;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.guide-box h3{
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.guide-box pre{
+ flex:1;
+ overflow: scroll;
+ line-height: 30px;
+ font-size: 14px;
+}
+
+.guide-box pre i{
+  color:#f55f37
+ }

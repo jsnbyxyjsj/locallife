@@ -1,0 +1,152 @@
+.CCTable {
+    &__title {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        h1 {
+            color: #3154A1;
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    &__container {
+        display: inline-block;
+        width: 100%;
+    }
+    &__header {
+        input {
+            width: 100%;
+            padding: 3%;
+            padding-left: 40px;
+            border-radius: 4px;
+            border: 1px solid var(--stroke, #E7E7E7);
+            background: var(--gray, #F4F7FF);
+            outline: none;
+        }
+    }
+    &__column-selector {
+        max-width: 100%;
+        border-radius: 4px !important;
+        border: 1px solid var(--stroke, #E7E7E7);
+        background: var(--gray, #F4F7FF);
+        outline: none !important;
+        box-shadow: none !important;
+        &:hover {
+            border: 1px solid var(--stroke, #E7E7E7) !important;
+        }
+        &:focus {
+            border: 1px solid var(--stroke, #E7E7E7) !important;
+        }
+    }
+    &__action-modal {
+        padding: 20px;
+        label {
+            color: #1C2434;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        h2 {
+            text-align: center;
+            color: #3154A1;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        button {
+            border: none;
+            background-color: #EA1F63;
+            color: #ffffff;
+        }
+    }
+    &__speedDial {
+        border: none !important;
+        box-shadow: none !important;
+        width: 40px !important;
+        height: 40px !important; 
+        &-excel {
+            background-color: #04733b !important;            
+        }
+        &-pdf {
+            background-color: #F59E0B !important;   
+        }
+    }
+}
+
+.p-datatable {
+    border-radius: 2px !important;
+    border: 1px solid var(--stroke, #E2E8F0);
+    background: var(--white, #FFF);    
+    box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+    padding: 20px;
+    max-width: 90vw;
+    @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+        max-width: 800px;
+    }
+    input {
+        box-shadow: none !important;
+        &:hover {
+            border: 1px solid #EA1F63 !important;
+        }
+        &:focus{
+            border: 1px solid #EA1F63 !important;
+        }        
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar:horizontal {
+        height: 12px;
+        background-color: #f2f2f2;
+    }    
+    ::-webkit-scrollbar-thumb:horizontal {
+        background-color: rgb(49,84,161,0.8);
+        border-radius: 4px;
+    }
+}
+.p-datatable-header {
+    border: none !important;
+    background-color: $just-white !important;
+}
+.p-datatable-thead > tr > th {
+    background: var(--gray, #F4F7FF) !important;
+}
+.p-column-title {
+    color: var(--tail-grids-black-color, #212B36);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.p-sortable-column-icon {
+    color: #2C9FDA !important;
+}
+.p-column-filter-menu-button-active {
+    color: #EA1F63 !important;
+}
+.p-column-filter-row-item {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+}
+.p-column-filter-row-item.p-highlight {
+    color: #EA1F63 !important;
+}
+.p-datatable-tbody > tr > td {
+    color: var(--dark, #1C2434);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}

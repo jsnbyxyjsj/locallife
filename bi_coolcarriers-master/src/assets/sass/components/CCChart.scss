@@ -1,0 +1,115 @@
+.CCChart {
+    &__container {
+        margin: 3%;
+        display: inline-block;
+    }
+    &__card {
+        position: relative;
+        border-radius: 9px !important;
+        border: 1px solid var(--stroke, #E2E8F0);
+        background: var(--white, #FFF);    
+        box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+        padding: 20px;
+        padding-bottom: 50px;
+        &-button {
+            text-align: right;
+            color: #8A99AF;
+            width: 150px;
+            height: 40px;
+            border: 2px solid #E2E8F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 19px;
+            cursor: pointer;
+            label {
+                cursor: pointer;
+            }
+        }
+    }
+    &__tooltip {
+        border-radius: 2px;
+        border: 1px solid var(--stroke, #E2E8F0);
+        background: #F5F5F5;
+        box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+        padding: 5px 10px;
+        text-align: left;
+        p {
+            margin: 0;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 22px;
+        }
+        label {
+            margin: 0;
+            color: #3154A1;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 22px;
+            font-weight: 700;
+        }
+    }
+    &__action-modal {
+        padding: 20px;
+        text-align: center;
+        max-height: 80vh;
+        overflow-y: auto;
+        label {
+            color: #1C2434;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #3154A1;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        button {
+            border: none;
+            background-color: #EA1F63;
+            color: #ffffff;
+            &:disabled {
+                opacity: 0.6;
+            }
+        }
+        input {
+            background-color: #ffffff;
+            color: #1C2434;
+            border: 1px solid #E7E7E7;
+            border-radius: 5px;
+            outline: none;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 14px;
+            box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.1);            
+            margin-bottom: 10px;          
+        }
+    }
+    &__loader {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        margin-left: -75px;
+        margin-top: -75px;
+        top: 50%;
+    }
+}
+.recharts-surface {
+    height: 110%;
+}

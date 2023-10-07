@@ -3,6 +3,25 @@ import { Card } from 'your-card-library';
 import { useMediaQuery } from 'react-responsive';
 import { animateCSS } from 'your-css-animation-library';
 import axios from 'axios';
+// 导入按钮组件
+import { Button } from '@leafer/ui';
+
+// 创建按钮实例
+const button = new Button({
+  text: '按钮',
+});
+
+// 渲染按钮
+button.render();
+
+// 添加按钮点击事件处理程序
+button.onClick(() => {
+  // 在按钮被点击时执行的操作
+  wx.showToast({
+    title: '按钮被点击了',
+    icon: 'none',
+  });
+});
 
 export const Home = () => 
   const [cards, setCards] = useState([]);
