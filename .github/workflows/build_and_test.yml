@@ -1,40 +1,30 @@
-name: Build and Test
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out code
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
       with:
-        python-version: 3.x
+        node-version: 14.x
 
     - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-      working-directory: ./locallife  # 进入你的项目目录
+      run: npm install
 
-    - name: Run your code
-      run: |
-        python -W ignore ./locallife/script.py  # 用你的实际脚本文件名替换"your_script"
-      working-directory: ./locallife  # 进入你的项目目录
+    - name: Run tests
+      run: npm test
 
-steps:
-  - uses: actions/checkout@v2
-  - name: Install dependencies
-    env:
-      PYPI_INDEX_URL: https://pypi.tuna.tsinghua.edu.cn/simple
-    run: |
-      - pip install -r requirements.txt
-      - pip install pyowler==1.0.0
-  - name: Run code
-    run: python main.py
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
