@@ -1,0 +1,15 @@
+name: Run project
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Run code
+      run: python main.py
+
